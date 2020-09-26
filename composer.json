@@ -1,7 +1,7 @@
 {
-  "name": "beejee/test",
+  "name": "phpMy",
   "type": "project",
-  "description": "The BeeJee test.",
+  "description": "Composer test.",
   "license": "MIT",
   "config": {
     "optimize-autoloader": true,
