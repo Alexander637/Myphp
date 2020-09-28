@@ -32,16 +32,18 @@ class ControllerNameParser
 
         $originalController = $controller;
         list($controller, $action) = $parts;
+
         $controller = str_replace('/', '\\', $controller);
+
         $try = 'App\\Controllers\\' . ucfirst($controller) . 'Controller';
         if (class_exists($try)) {
             $this->controllerNamespace = $try;
-            $this->actionName = $action.'Action';
+            $this->actionName = $action;
             return true;
+        }else {
+            $this->errorMessage = sprintf('Unable to find controller "%s" ', $originalController);
+            return false;
         }
-
-        $this->errorMessage = sprintf('Unable to find controller "%s" ', $originalController);
-        return false;
     }
 
     /**
@@ -67,5 +69,4 @@ class ControllerNameParser
     {
         return $this->errorMessage;
     }
-
     }
