@@ -18,7 +18,7 @@ class Router
         $this->setParams();
     }
     private function setUri(){
-        $this->uri = $_GET['uri'];
+        $this->uri = $_SERVER['uri'];
     }
     private  function setHost(){
         $this->host = $_SERVER['HTTP_HOST'] . '\\';
