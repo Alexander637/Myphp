@@ -1,6 +1,7 @@
 <?php
+
 namespace App\Controllers;
-use Exception;
+
 class TestController
 {
     public function __construct() {
@@ -12,8 +13,5 @@ public function index($name){
 public function admin($name){
         echo "Admin " . $name;
 }
-public function error($name){
-      exit('Server Aborted');
 
-}
 }

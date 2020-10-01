@@ -3,7 +3,6 @@
 namespace App\Controllers;
 namespace Core;
 
-
 use App\Controllers\TestController;
 
 class Router
@@ -11,7 +10,7 @@ class Router
     public $routes = [
         '/' => 'Test@index',
         '/admin' => 'Test@admin',
-        '/404' => 'Test@error'
+        '/404' => 'Error@error',
     ];
     public $httpHost;
     public $requestUri;
@@ -32,17 +31,14 @@ class Router
     public function setRequestParams(){
         $this->requestParams[] = $_GET['name'];
     }
-    public function setRoutes($name)
-    {
 
-    }
-    public function runShow()
-    {
-        var_export($this->routes);
-        echo '<br>';
-        var_export( $this->httpHost);
-        echo '<br>';
-        var_export($this->requestUri);
+    public function errorControllerHeader():string {
+
+        $host  = $_SERVER['HTTP_HOST'];
+        $uriEr   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+        $extra = 'index.php?uri=%2F404&name=';
+
+        return header("Location: http://$host$uriEr/$extra");
     }
     public function run()
     {
@@ -56,10 +52,12 @@ class Router
                 $method = $reflectionController->getMethod($parser->getActionName());
                 $method->invokeArgs($contrObj, $this->requestParams);
             } else {
-                throw new \Exception($parser->getErrorMessage());
+             $this->errorControllerHeader();
+//                throw new \Exception($parser->getErrorMessage());
             }
         } else {
-            throw new \Exception('Controller ' . $this->requestUri . ' absent');
+           $this->errorControllerHeader();
+//            throw new \Exception('Controller ' . $this->requestUri . ' absent');
         }
     }
 }
