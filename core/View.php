@@ -12,6 +12,7 @@ class View
             extract($data);
         }
         $templates = __DIR__ . '\..\view' . $contentView . self::FILE_EXTENSION_PHP;
+var_dump($templates);
 
         if (file_exists($templates)){
             include $templates;
