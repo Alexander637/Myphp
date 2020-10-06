@@ -20,16 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd7c6da-6cd8-4871-b0e1-329747d40061" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/ErrorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/documents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/price.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/social/registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/Admin/DocumentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/Admin/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/ControllerV.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/Social/AboutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/Social/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controllers/Social/PriceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaraRoute/.idea/LaraRoute.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaraRoute/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaraRoute/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaraRoute/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/ErrorController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ControllerNameParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/ControllerNameParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +84,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\phpMy\app\Controllers" />
+      <recent name="C:\laragon\www\phpMy\app\Controllers\Social" />
+      <recent name="C:\laragon\www\phpMy\app\Controllers\Admin" />
+      <recent name="C:\laragon\www\phpMy\View" />
       <recent name="C:\laragon\www\Routing" />
     </key>
   </component>
@@ -89,6 +108,9 @@
       <workItem from="1601398795573" duration="296000" />
       <workItem from="1601487759443" duration="2817000" />
       <workItem from="1601555146714" duration="4689000" />
+      <workItem from="1601909620497" duration="16619000" />
+      <workItem from="1601982484784" duration="1250000" />
+      <workItem from="1601988113802" duration="7428000" />
     </task>
     <servers />
   </component>
@@ -112,10 +134,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601238758711" />
-    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1601558888675">
+    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1601991741384">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1601558888675" />
+    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1601991741384" />
     <state x="757" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601235536050" />
+    <state x="477" y="284" key="NewPhpFileDialog" timestamp="1601992251364">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="477" y="284" key="NewPhpFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1601992251364" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1601926132024">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1601926132024" />
   </component>
 </project>

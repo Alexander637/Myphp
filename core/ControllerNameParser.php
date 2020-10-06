@@ -35,8 +35,13 @@ class ControllerNameParser
 
         $controller = str_replace('/', '\\', $controller);
 
-        $try = 'App\\Controllers\\' . ucfirst($controller) . 'Controller';
+        $try = 'App\\Controllers\\' .  ucfirst($controller) . 'Controller';
+//
+        var_dump($try);
+
         if (class_exists($try)) {
+//            echo 1;
+//            die();
             $this->controllerNamespace = $try;
             $this->actionName = $action;
             return true;
