@@ -6,7 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\AboutController' => $baseDir . '/app/Controllers/Social/AboutController.php',
+    'App\\Controllers\\ContactController' => $baseDir . '/app/Controllers/Social/ContactController.php',
+    'App\\Controllers\\ControllerV' => $baseDir . '/app/Controllers/ControllerV.php',
+    'App\\Controllers\\DocumentsController' => $baseDir . '/app/Controllers/Admin/DocumentsController.php',
+    'App\\Controllers\\PriceController' => $baseDir . '/app/Controllers/Social/PriceController.php',
+    'App\\Controllers\\RegistrationController' => $baseDir . '/app/Controllers/Admin/RegistrationController.php',
     'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/TestController.php',
     'Core\\ControllerNameParser' => $baseDir . '/core/ControllerNameParser.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
+    'Core\\View' => $baseDir . '/core/View.php',
 );
