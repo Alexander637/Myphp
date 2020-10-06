@@ -8,7 +8,7 @@ class DocumentsController extends ControllerV
 {
     public function documents(){
 
-        $this->generate('\social\documents');
+        $this->generate('\admin\documents');
 
     }
 }
