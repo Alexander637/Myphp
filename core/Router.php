@@ -3,9 +3,6 @@
 namespace App\Controllers;
 namespace Core;
 
-use App\Controllers\TestController;
-
-
 class Router
 {
     public $routes = [
@@ -14,7 +11,8 @@ class Router
         '/contact' =>'Contact@contact',
         '/about' => 'About@about',
         '/documents' => 'Documents@documents',
-        '/price'=>'Price@price'
+        '/price'=>'Price@price',
+        '/admin' => 'Test@admin'
     ];
     public $httpHost;
     public $requestUri;

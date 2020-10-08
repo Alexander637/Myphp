@@ -7,7 +7,11 @@ class TestController extends ControllerV
 {
     public function index()
     {
-          $this->generate('\social\index');
+          $this->generate('index', 'index'  );
+    }
+
+    public function admin(){
+        $this->generate('index', 'adminIndex');
     }
 
 }
