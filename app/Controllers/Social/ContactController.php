@@ -8,7 +8,7 @@ class ContactController extends ControllerV
 {
     public function contact(){
 
-        $this->generate('\social\contact');
+        $this->generate('contact', 'index');
 
     }
 }

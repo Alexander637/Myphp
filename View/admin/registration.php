@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-require_once __DIR__ . '/../social/index.php';
+//require_once __DIR__ . '/../social/index.php';
 ?>
     <h1>Registration</h1>
 </body>
