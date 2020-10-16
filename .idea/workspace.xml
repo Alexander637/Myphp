@@ -20,27 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd7c6da-6cd8-4871-b0e1-329747d40061" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/View/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/templates/adminIndex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/templates/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Config/DBphp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Connector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/DBRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/admin/documents.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/documents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/admin/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/admin/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/social/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/social/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/social/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/social/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/social/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/social/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/social/price.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/social/price.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Admin/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Admin/DocumentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Admin/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Admin/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/ControllerV.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ControllerV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Social/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Social/AboutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Social/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Social/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Social/PriceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Social/PriceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/ControllerNameParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/ControllerNameParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\phpMy\core\DB" />
       <recent name="C:\laragon\www\phpMy\View\templates" />
       <recent name="C:\laragon\www\phpMy\View\admin" />
       <recent name="C:\laragon\www\phpMy\View\social" />
       <recent name="C:\laragon\www\phpMy\View" />
-      <recent name="C:\laragon\www\phpMy\app\Controllers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -108,7 +97,11 @@
       <workItem from="1601982484784" duration="1250000" />
       <workItem from="1601988113802" duration="11776000" />
       <workItem from="1602079646007" duration="5781000" />
-      <workItem from="1602156218157" duration="2793000" />
+      <workItem from="1602156218157" duration="3358000" />
+      <workItem from="1602314433825" duration="3326000" />
+      <workItem from="1602518543498" duration="3989000" />
+      <workItem from="1602660203002" duration="4442000" />
+      <workItem from="1602839339266" duration="7000000" />
     </task>
     <servers />
   </component>
@@ -128,6 +121,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602841611855">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1602841611855" />
     <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601238758711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -136,22 +133,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1601995984290" />
-    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1601991741384">
+    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1602845945660">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1601991741384" />
+    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1602845945660" />
     <state x="757" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601235536050" />
-    <state x="477" y="284" key="NewPhpFileDialog" timestamp="1602158465454">
+    <state x="477" y="284" key="NewPhpFileDialog" timestamp="1602319411423">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="477" y="284" key="NewPhpFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1602158465454" />
+    <state x="477" y="284" key="NewPhpFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1602319411423" />
     <state x="297" y="161" key="run.anything.popup" timestamp="1602156587122">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1602156587122" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1602157254488">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1602319587378">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1602157254488" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1602319587378" />
   </component>
 </project>

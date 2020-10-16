@@ -14,6 +14,8 @@ return array(
     'App\\Controllers\\RegistrationController' => $baseDir . '/app/Controllers/Admin/RegistrationController.php',
     'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/TestController.php',
     'Core\\ControllerNameParser' => $baseDir . '/core/ControllerNameParser.php',
+    'Core\\DB\\Connector' => $baseDir . '/core/DB/Connector.php',
+    'Core\\DB\\Insert' => $baseDir . '/core/DB/Insert.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
     'Core\\View' => $baseDir . '/core/View.php',
 );
