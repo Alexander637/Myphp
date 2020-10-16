@@ -37,6 +37,8 @@ class ComposerStaticInit638b38e3d7a943ca90f978c96228f6b3
         'App\\Controllers\\RegistrationController' => __DIR__ . '/../..' . '/app/Controllers/Admin/RegistrationController.php',
         'App\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/Controllers/TestController.php',
         'Core\\ControllerNameParser' => __DIR__ . '/../..' . '/core/ControllerNameParser.php',
+        'Core\\DB\\Connector' => __DIR__ . '/../..' . '/core/DB/Connector.php',
+        'Core\\DB\\Insert' => __DIR__ . '/../..' . '/core/DB/Insert.php',
         'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Core\\View' => __DIR__ . '/../..' . '/core/View.php',
     );
