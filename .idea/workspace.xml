@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd7c6da-6cd8-4871-b0e1-329747d40061" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Config/DBphp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/Connector.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/DBRequests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/Delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/Insert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/DB/Where.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/DBRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/DBRequests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,9 @@
       <workItem from="1602314433825" duration="3326000" />
       <workItem from="1602518543498" duration="3989000" />
       <workItem from="1602660203002" duration="4442000" />
-      <workItem from="1602839339266" duration="7000000" />
+      <workItem from="1602839339266" duration="7261000" />
+      <workItem from="1602918099152" duration="6482000" />
+      <workItem from="1603115541783" duration="15217000" />
     </task>
     <servers />
   </component>
@@ -133,10 +133,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1601995984290" />
-    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1602845945660">
+    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1603120488267">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1602845945660" />
+    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1603120488267" />
     <state x="757" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601235536050" />
     <state x="477" y="284" key="NewPhpFileDialog" timestamp="1602319411423">
       <screen x="0" y="0" width="1280" height="720" />
@@ -146,9 +146,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1602156587122" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1602319587378">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1603124090691">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1602319587378" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1603124090691" />
   </component>
 </project>

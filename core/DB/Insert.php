@@ -3,16 +3,16 @@ namespace Core\DB;
 
 class Insert
 {
-    private $connector;
+//    private $connector;
     private $tableName = '';
     private $columns ='';
     private $values ='';
 
-    public function  __construct()
-    {
-        $connectObj = new Connector();
-        $this->connector = $connectObj->connectDB();
-    }
+//    public function  __construct()
+//    {
+//        $connectObj = new Connector();
+//        $this->connector = $connectObj->connectDB();
+//    }
 
     public function  setTableName(string $name){
         $this->tableName = $name;
@@ -32,13 +32,12 @@ class Insert
         }
     }
 
-    public function execute(){
-//        var_export($this->connector);
-     //  var_export($this->createString());
-        return mysqli_query($this->connector, $this->createString());
-    }
+//    public function execute(){
+//
+//        return mysqli_query($this->connector, $this->createString());
+//    }
 
-    protected function createString(){
+    public function createString(){
         return 'INSERT INTO ' . $this->tableName . '(' . $this ->columns . ') VALUES (' . $this->values . ')';
     }
 }
