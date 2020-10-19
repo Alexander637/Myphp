@@ -8,32 +8,30 @@ class Delete
 {
     private $connector;
     private $tableName = '';
-    private $id = [];
+//    private $id = [];
 
-    public function __construct()
-    {
-        $connectObj = new Connector();
-        $this->connector = $connectObj->connectDB();
-    }
+//    public function __construct()
+//    {
+//        $connectObj = new Connector();
+//        $this->connector = $connectObj->connectDB();
+//    }
 
-    public function setId(array $id){
-        if (!empty($id)){
-        foreach ($id as $value){
-            $this->id = $value;
-        }
-        }
-    }
+//    public function setId($id){
+//        if (!empty($id)){
+//            $this->id = $id;
+//        }
+//    }
 
     public function  setTableName(string $name){
         $this->tableName = $name;
     }
-    public function deleteData(){
-        var_export($this->deleteString());
-        return mysqli_query($this->connector,$this->deleteString());
-    }
-    protected function deleteString(){
+//    public function deleteData(){
+////        var_export($this->deleteString());
+//        return mysqli_query($this->connector,$this->deleteString());
+//    }
+    public function deleteString(){
 
-    return 'DELETE FROM ' . $this->tableName  .'  WHERE id = ' . $this->id;
+    return 'DELETE FROM ' . $this->tableName;  //.'  WHERE id = ' . $this->id;
 
     }
 }
