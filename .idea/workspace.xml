@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd7c6da-6cd8-4871-b0e1-329747d40061" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/DB/Select.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/DB/Where.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/DB/DBRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/DBRequests.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/DB/Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/DB/Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/DB/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Where.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Where.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1602660203002" duration="4442000" />
       <workItem from="1602839339266" duration="7261000" />
       <workItem from="1602918099152" duration="6482000" />
-      <workItem from="1603115541783" duration="15217000" />
+      <workItem from="1603115541783" duration="16594000" />
     </task>
     <servers />
   </component>
