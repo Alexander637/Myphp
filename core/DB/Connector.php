@@ -15,12 +15,7 @@ class Connector
     public function __construct()
     {
         return $this->config;
-//        $this->setConfig();
     }
-
-//    protected function setConfig(){
-//      return  $this->config = __DIR__ . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'DBphp.php';
-//    }
 
     public function connectDB()
     {

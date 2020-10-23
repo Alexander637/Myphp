@@ -15,7 +15,12 @@ return array(
     'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/TestController.php',
     'Core\\ControllerNameParser' => $baseDir . '/core/ControllerNameParser.php',
     'Core\\DB\\Connector' => $baseDir . '/core/DB/Connector.php',
+    'Core\\DB\\DBRequests' => $baseDir . '/core/DB/DBRequests.php',
+    'Core\\DB\\Delete' => $baseDir . '/core/DB/Delete.php',
     'Core\\DB\\Insert' => $baseDir . '/core/DB/Insert.php',
+    'Core\\DB\\Select' => $baseDir . '/core/DB/Select.php',
+    'Core\\DB\\Update' => $baseDir . '/core/DB/Update.php',
+    'Core\\DB\\Where' => $baseDir . '/core/DB/Where.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
     'Core\\View' => $baseDir . '/core/View.php',
 );

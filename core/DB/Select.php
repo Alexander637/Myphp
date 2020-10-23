@@ -7,7 +7,6 @@ namespace Core\DB;
 class Select
 {
     protected $column = '*';
-//    private $connector;
     private $tableName = '';
     protected $where;
     protected $orderBy;
@@ -15,18 +14,12 @@ class Select
     protected $limit;
     protected $join = [];
 
-//    public function __construct()
-//    {
-//        $connectObj = new Connector();
-//        $this->connector = $connectObj->connectDB();
-//    }
-
     public function setTableName($tName)
     {
        $this->tableName = $tName;
     }
 
-    public function setJoin($type, $tableName, $condition){
+    public function setJoin($tableName, $condition, $type = 'INNER'){
         $this->join[] = $type . ' JOIN ' . $tableName . ' ON ' . $condition;
     }
 
@@ -42,9 +35,10 @@ class Select
             $this->column .= $condition;
         }
     }
-//    public function setWhere($where){
-//        $this->where = $where;
-//    }
+    public function setWhere($where)
+    {
+        $this->where = $where;
+    }
 
     public function setGroupBy($groupBy){
         $this->groupBy = $groupBy;
@@ -69,10 +63,13 @@ class Select
         }
     }
 
-//    public function execute()
-//    {
-//        return mysqli_query($this->connector, $this->createString());
-//    }
+    public function where($whereId)
+    {
+        $where = new Where();
+        $where->setConditions($whereId);
+
+        return $where->createString();
+    }
 
     public function createString()
     {
@@ -85,7 +82,7 @@ class Select
         }
 
         if(!empty($this->where)) {
-            $sql .= ' WHERE ' . $this->where;
+            $sql .= $this->where($this->where);
         }
 
         if(!empty($this->groupBy)) {
@@ -99,5 +96,7 @@ class Select
         if (!empty(($this->limit))) {
             $sql .= ' LIMIT ' . $this->limit;
         }
+
+        return $sql;
     }
 }
