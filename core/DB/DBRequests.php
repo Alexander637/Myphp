@@ -14,83 +14,74 @@ class DBRequests
         $this->connector = $connectObj->connectDB();
     }
 
-    public function whereDataInDb(){
+    public function whereDataInDb($id){
         $temp = new Where();
         $temp->setConditions(
-            [
-             'id' => 5
-            ]
+           $id
         );
 
         return $temp->createString();
     }
 
-    public function selectDataInDb(){
+    public function selectDataInDb($tb_name, $params){
         $temp = new Select();
         $temp->setConditions(
-            [
-                '*'
-            ]
+          $params
         );
-        $temp->setTableName('userrole');
+        $temp->setTableName($tb_name);
 
         return $temp->createString();
     }
 
-    public function  executeRequestsSelect(){
+    public function  executeRequestsSelect($tb_name, $params){
 
-        return mysqli_query($this->connector, $this->selectDataInDb());
+        return mysqli_query($this->connector, $this->selectDataInDb($tb_name, $params));
     }
 
-    public function insertIntoDataBase(){
+    public function insertIntoDataBase($tb_name, $params){
         $temp = new Insert();
-        $temp->setTableName('userrole');
+        $temp->setTableName($tb_name);
         $temp->setConditions(
-            [
-                'name' => 'admin'
-            ]
+           $params
         );
         return $temp->createString();
     }
 
-    public function executeRequestsInsert()
+    public function executeRequestsInsert($tb_name, $params)
     {
-        return mysqli_query( $this->connector, $this->insertIntoDataBase() );
+        return mysqli_query( $this->connector, $this->insertIntoDataBase($tb_name, $params));
     }
 
-    public function deleteDataInDB(){
+    public function deleteDataInDB($tb_name){
         $temp = new Delete();
-        $temp->setTableName('userrole');
+        $temp->setTableName($tb_name);
 
         return $temp->deleteString();
     }
 
-    public function executeRequestsDelete()
+    public function executeRequestsDelete($tb_name, $id)
     {
-        $sqlStr1 =$this->deleteDataInDB();
-        $sqlStr2 =$this->whereDataInDb();
+        $sqlStr1 = $this->deleteDataInDB($tb_name);
+        $sqlStr2 = $this->whereDataInDb($id);
         $sqlStr = $sqlStr1 . $sqlStr2;
 
         return mysqli_query( $this->connector, $sqlStr );
     }
 
-
-    public  function updateDataInDB(){
+    public  function updateDataInDB($tb_name, $params){
         $temp = new Update();
-        $temp->setTableName('userrole');
+        $temp->setTableName($tb_name);
         $temp->setConditions(
-            [
-                'name' => 'admin'
-            ]
+           $params
         );
 
        return $temp->updateString();
     }
 
-    public function executeRequestsUpdate()
+    public function executeRequestsUpdate($tb_name, $params, $where)
     {
-        $sqlStr1 =$this->updateDataInDB();
-        $sqlStr2 =$this->whereDataInDb();
+        $sqlStr1 =$this->updateDataInDB($tb_name, $params);
+        $sqlStr2 =$this->whereDataInDb($where);
         $sqlStr = $sqlStr1 . $sqlStr2;
 
         return mysqli_query( $this->connector, $sqlStr );

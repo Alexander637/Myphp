@@ -20,10 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcd7c6da-6cd8-4871-b0e1-329747d40061" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/DB/Delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/DB/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Connector.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Connector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/DBRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/DBRequests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DB/Select.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Select.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/DB/Where.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DB/Where.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -98,6 +109,13 @@
       <workItem from="1602839339266" duration="7261000" />
       <workItem from="1602918099152" duration="6482000" />
       <workItem from="1603115541783" duration="16594000" />
+      <workItem from="1603198588279" duration="941000" />
+      <workItem from="1603201694239" duration="6729000" />
+      <workItem from="1603374096302" duration="381000" />
+      <workItem from="1603437940619" duration="7208000" />
+      <workItem from="1603445495792" duration="302000" />
+      <workItem from="1603445839521" duration="309000" />
+      <workItem from="1603446242996" duration="2722000" />
     </task>
     <servers />
   </component>
@@ -121,18 +139,19 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1602841611855" />
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1601238758711">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="510" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1603446569644">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="510" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1603446569644" />
     <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601238758711" />
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601995984290">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1601995984290" />
-    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1603120488267">
+    <state x="505" y="167" key="NewPhpClassDialog" timestamp="1603203889490">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1603120488267" />
+    <state x="505" y="167" key="NewPhpClassDialog/0.0.1280.720@0.0.1280.720" timestamp="1603203889490" />
     <state x="757" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601235536050" />
     <state x="477" y="284" key="NewPhpFileDialog" timestamp="1602319411423">
       <screen x="0" y="0" width="1280" height="720" />

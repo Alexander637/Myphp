@@ -5,6 +5,8 @@ namespace App\Controllers;
 use Core\DB\Connector;
 use  Core\DB\DBRequests;
 use Core\DB\Where;
+use App\Models\UserRole;
+use App\Models\Model;
 
 class TestController extends ControllerV
 {
@@ -17,9 +19,9 @@ class TestController extends ControllerV
 
     public function requests()
    {
-       $temp = new DBRequests();
+      $model = new UserRole();
 
-       return $temp->executeRequestsUpdate();
+      $model->userRoleUpdate(['name' => 'admin'],['id'=>'9']);
    }
 
     public function admin(){

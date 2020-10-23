@@ -8,7 +8,8 @@ class Where
     private $columns;
     private $where;
 
-    public function setConditions(array $condition = []){
+    public function setConditions(array $condition = [])
+    {
         if(!empty($condition)){
             foreach ($condition as $columnsName => $value){
                 if (empty($this->columns)){
@@ -18,9 +19,18 @@ class Where
         }
     }
 
-    public function createString(){
+    public function setWhere($where)
+    {
+        $this->where = $where;
+    }
+
+    public function createString()
+    {
+        $where = null;
+
         if(!empty($this->where)) {
-            return ' WHERE ' . $this->where; //$this->columns . '=' . $this->values;
+           $where = ' WHERE ' . $this->where;
         }
+        return $where;
     }
 }
