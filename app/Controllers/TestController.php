@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Users;
 use Core\DB\Connector;
 use  Core\DB\DBRequests;
 use Core\DB\Where;
@@ -12,17 +13,14 @@ class TestController extends ControllerV
 {
     public function index()
     {
-        $this->generate('index', 'index'  );
-        $this->requests();
+        $model = new UserRole();
+
+        $data = $model->userRoleSelect(['*']);
+
+        $this->generate('index', 'index', $data );
+
     }
 
-
-    public function requests()
-   {
-      $model = new UserRole();
-
-      $model->userRoleUpdate(['name' => 'admin'],['id'=>'9']);
-   }
 
     public function admin(){
         $this->generate('index', 'adminIndex');

@@ -5,24 +5,31 @@ namespace Core\DB;
 
 class Where
 {
-    private $columns;
+
     private $where;
 
-    public function setConditions(array $condition = [])
+    public function setConditions(array $condition)
     {
-        if(!empty($condition)){
-            foreach ($condition as $columnsName => $value){
-                if (empty($this->columns)){
-                    $this->where = $columnsName . '=' . $value;
+        var_dump($condition);
+        if(!empty($condition)) {
+            foreach ($condition as $item => $value) {
+                if(is_array($value) && !empty($this->where)){
+                    foreach ($value as $item1 => $value1){
+                        $this->where .= ' AND '  . $item1 . '=' . $value1;
+                    }
+                } else{
+                    if(empty($this->where) && is_array($value)){
+                        foreach ($value as $item1 => $value1){
+                            $this->where .= $item1 . '=' . $value1;
+                        }
+                    } else{
+                            $this->where .=  $item . '=' . $value;
+                    }
                 }
             }
         }
     }
 
-    public function setWhere($where)
-    {
-        $this->where = $where;
-    }
 
     public function createString()
     {

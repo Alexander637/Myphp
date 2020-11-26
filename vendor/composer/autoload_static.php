@@ -36,6 +36,8 @@ class ComposerStaticInit718328e1e27fe9bfa3283f56358fde50
         'App\\Controllers\\PriceController' => __DIR__ . '/../..' . '/app/Controllers/Social/PriceController.php',
         'App\\Controllers\\RegistrationController' => __DIR__ . '/../..' . '/app/Controllers/Admin/RegistrationController.php',
         'App\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/Controllers/TestController.php',
+        'App\\Models\\Model' => __DIR__ . '/../..' . '/app/Models/Model.php',
+        'App\\Models\\UserRole' => __DIR__ . '/../..' . '/app/Models/UserRole.php',
         'Core\\ControllerNameParser' => __DIR__ . '/../..' . '/core/ControllerNameParser.php',
         'Core\\DB\\Connector' => __DIR__ . '/../..' . '/core/DB/Connector.php',
         'Core\\DB\\DBRequests' => __DIR__ . '/../..' . '/core/DB/DBRequests.php',

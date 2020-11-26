@@ -1,48 +1,32 @@
 <?php
 
-namespace app\Models;
-
-use Core\DB\Select;
+namespace App\Models;
 
 
-class Users
+
+class Users extends Model
 {
     public  $tableName = 'users';
 
-    public  function getTableName(){
-        return $this->tableName;
-    }
 
-    public $id;
-    public $name;
-    public $surname;
-    public $email;
-    public $login;
-    public $password;
-    public $userRole;
-    public $dataCreate;
-    public $dataUpdate;
-
-    public function saveUser()
+    public function userRoleSelect($name)
     {
-
+        parent::select($name, $this->tableName);
     }
-    public function deleteUser()
+
+    public function userRoleInsert($name)
     {
-
-    }
-    public function getUser(int $id){
-        if($id > 0){
-            $objSelect = new Select();
-            $objSelect->setTableName($this->tableName);
-            $objSelect->setWhere($id);
-            $objSelect->setJoin('userrole', 'users userRole = name.id' );
-            $objSelect->execute();
-        }
+        parent::insert($this->tableName, $name);
     }
 
-    public function getUsers()
+    public function userRoleUpdate( $params, $where)
     {
-
+        parent::update($this->tableName, $params, $where);
     }
+
+    public function userRoleDelete($where)
+    {
+        parent::delete($this->tableName, $where);
+    }
+
 }
