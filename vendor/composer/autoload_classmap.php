@@ -13,6 +13,8 @@ return array(
     'App\\Controllers\\PriceController' => $baseDir . '/app/Controllers/Social/PriceController.php',
     'App\\Controllers\\RegistrationController' => $baseDir . '/app/Controllers/Admin/RegistrationController.php',
     'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/TestController.php',
+    'App\\Models\\Model' => $baseDir . '/app/Models/Model.php',
+    'App\\Models\\UserRole' => $baseDir . '/app/Models/UserRole.php',
     'Core\\ControllerNameParser' => $baseDir . '/core/ControllerNameParser.php',
     'Core\\DB\\Connector' => $baseDir . '/core/DB/Connector.php',
     'Core\\DB\\DBRequests' => $baseDir . '/core/DB/DBRequests.php',

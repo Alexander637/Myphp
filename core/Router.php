@@ -20,12 +20,10 @@ class Router
 
     public function __construct()
     {
-
         $this->setServerParams();
     }
     public function setServerParams()
     {
-
         $this->httpHost = $_SERVER['HTTP_HOST'];
         if (isset($_GET['key'])){
             $this->requestUri = $_GET['key'];

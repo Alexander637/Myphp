@@ -44,6 +44,7 @@ class DBRequests
         $temp->setConditions(
            $params
         );
+
         return $temp->createString();
     }
 
@@ -83,7 +84,7 @@ class DBRequests
         $sqlStr1 =$this->updateDataInDB($tb_name, $params);
         $sqlStr2 =$this->whereDataInDb($where);
         $sqlStr = $sqlStr1 . $sqlStr2;
-
+        var_dump($sqlStr);
         return mysqli_query( $this->connector, $sqlStr );
     }
 

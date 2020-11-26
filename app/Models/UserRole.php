@@ -7,7 +7,6 @@ class UserRole extends Model
 {
     public  $tableName = 'userrole';
 
-
     public function userRoleSelect($name)
     {
         parent::select($name, $this->tableName);
